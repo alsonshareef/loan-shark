@@ -1,0 +1,23 @@
+{
+  "name": "loan-shark",
+  "version": "1.0.0",
+  "description": "loan shark app",
+  "main": "index.js",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alsonshareef/loan-shark.git"
+  },
+  "author": "Alson Shareef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alsonshareef/loan-shark/issues"
+  },
+  "homepage": "https://github.com/alsonshareef/loan-shark#readme"
+}
