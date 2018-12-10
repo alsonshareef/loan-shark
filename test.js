@@ -1,7 +1,5 @@
 const Loanee = require('./loanee');
 
-let loanee = new Loanee();
-
 // Test if first name passed in will be equal to the first name that is stored;
 function testFirstName (){
     console.log(`Testing first name..`)
@@ -18,8 +16,6 @@ function testFirstName (){
     }
     console.log(`* First name test complete * \n`)
 }
-
-testFirstName();
 
 // Test if last name passed in will be equal to the last name that is stored;
 function testLastName (){
@@ -38,8 +34,6 @@ function testLastName (){
     console.log(`* Last name test complete * \n`)
 }
 
-testLastName();
-
 // Test if email passed in will be equal to the email that is stored;
 function testEmail (){
     console.log(`Testing email..`)
@@ -56,8 +50,6 @@ function testEmail (){
     }
     console.log(`* Email test complete * \n`)
 }
-
-testEmail();
 
 // Test if loan amount passed in will be equal to the loan amount that is stored;
 function testLoanAmount (){
@@ -76,4 +68,18 @@ function testLoanAmount (){
     console.log(`* Loan amount test complete * \n`)
 }
 
-testLoanAmount();
+let loanee;
+
+function setup(){
+    loanee = new Loanee();
+}
+
+function runTest(){
+    testFirstName();
+    testLastName();
+    testEmail();
+    testLoanAmount();
+}
+
+setup();
+runTest();
