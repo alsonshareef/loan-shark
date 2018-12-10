@@ -4,55 +4,28 @@ A REPL style application that was built with Node.js which allows the user to ta
 
 ## Getting Started
 What things you need to install the software and how to install them
-* npm
-
-```
-$ npm install --save npm-latest-version
-```
-
+* [Node.js](https://nodejs.org/en/)
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+
 
 ```
-Give the example
+npm install 
 ```
 
-And repeat
+And to run the app
 
 ```
-until finished
+node index.js
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+node test.js
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
