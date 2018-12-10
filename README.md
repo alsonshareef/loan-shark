@@ -16,12 +16,13 @@ A step by step series of examples that tell you how to get a development env run
 npm install 
 ```
 
-And to run the app
+And to run the app, go to root directory of project and run:
 
 ```
 node index.js
 ```
 ## Running the tests
+To run tests:
 
 ```
 node test.js
