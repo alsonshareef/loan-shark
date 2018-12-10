@@ -22,15 +22,15 @@ if (readlineSync.keyInYN(`Hi there, would you like to take out a loan? `)) {
     loanee.setEmail(email);
 
     // Find out how much they want to take out
-    function calcLoan (){
+    let calcLoan = () => {
         let loanAmount = '$' + readlineSync.question('How much money would you like to take out? ');
         loanee.setLoanAmount(loanAmount);
-
+    
         if (readlineSync.keyInYN(`Are you sure that you would like to take out ${loanAmount}?`)) {
             loanee.setLoanDate();
             return console.log(`Great! ${firstName}, you have taken out ${loanAmount} at ${loanee.getLoanDate().toLocaleString()}`)
         } else {
-            console.log(`** Enter the amount you would like to take out please **`);
+            console.log(`** Please enter the amount you would like to take out **`);
             calcLoan();
         }
     }
@@ -42,17 +42,3 @@ if (readlineSync.keyInYN(`Hi there, would you like to take out a loan? `)) {
   }
 
   loanee.prettyPrint();
-
-// Calculate time loan was taken out
-function loanDate (){
-    let date = new Date();
-    let hours, minutes, seconds;
-    hours = date.getHours() - 12;
-    minutes = date.getMinutes();
-    let AM_PM = date.getHours() < 12 ? 'AM' : 'PM'
-
-    let time = `${hours}:${minutes} ${AM_PM}`
-
-    return time;
-}
-
