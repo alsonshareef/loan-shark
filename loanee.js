@@ -44,7 +44,10 @@ class Loanee {
     }
 
     setLoanDate (){
-        this.loanDate = new Date();
+        let date = new Date().toDateString()
+        let time = new Date().toLocaleTimeString()
+        let AM_PM = new Date().getHours < 12 ? 'AM' : 'PM';
+        this.loanDate = `${date} - ${time} ${AM_PM}`;
     }
 
     prettyPrint (){
@@ -52,7 +55,7 @@ class Loanee {
         console.log(`Last Name : ${this.lastName}`);
         console.log(`Email : ${this.email}`);
         console.log(`Loan Amount : ${this.loanAmount}`);
-        console.log(`Loan Date : ${this.loanDate.toLocaleString()}`);
+        console.log(`Loan Date : ${this.loanDate}`);
     }
 }
 module.exports = Loanee;  

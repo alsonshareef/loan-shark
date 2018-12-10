@@ -28,7 +28,7 @@ if (readlineSync.keyInYN(`Hi there, would you like to take out a loan? `)) {
     
         if (readlineSync.keyInYN(`Are you sure that you would like to take out ${loanAmount}?`)) {
             loanee.setLoanDate();
-            return console.log(`Great! ${firstName}, you have taken out ${loanAmount} at ${loanee.getLoanDate().toLocaleString()}`)
+            return console.log(`Great! ${firstName}, you have taken out ${loanAmount} at ${loanee.getLoanDate()}`)
         } else {
             console.log(`** Please enter the amount you would like to take out **`);
             calcLoan();
